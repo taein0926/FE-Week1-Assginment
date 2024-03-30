@@ -4,30 +4,107 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      
+      .blog {
+        display: grid;
+        grid-template: 1fr 1fr 8fr 8fr 1fr / 1fr;
+      }
+
+      header {
+        position: fixed;
+        width: 100vw;
+        height: 3.333rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(211, 141, 156);
+      }
+      
+      nav {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.788);
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-right: 1.5rem;
+      }
+
+      li {
+        margin: 0;
+        padding: 0;
+        float: right;
+        margin: 0 0.5rem 0 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      #login {
+        background-color: rgb(211, 141, 188);
+      }
+
+      form {
+        width: 10rem;
+        margin: 0.5rem;
+      }
+
+      form > input {
+        width: inherit;
+        height: 2.5rem;
+        border: 0.15rem solid black;
+        border-radius: 0.5rem;
+        margin: 0.5rem 0 0 0.5rem;
+      }
+
+      #intro {
+        background-color: rgb(141, 167, 211);
+      }
+
+      h2, p {
+        margin: 1rem;
+      }
+
+      footer {
+        text-align: center;
+        background-color: rgb(141, 211, 170);
+      }
+    </style>
   </head>
   <body>
-    <header>*** 블로그 입니다</header>
-    <nav>
-      <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">DIARY</a></li>
-        <li><a href="#">MEDIA</a></li>
-      </ul>
-    </nav>
-    <article>
-      <section>
+    <div class="blog">
+      <header>김태인 블로그 입니다</header>
+      <div class="empty"></div>
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">DIARY</a></li>
+          <li><a href="#">MEDIA</a></li>
+        </ul>
+      </nav>
+      <section id="login">
         <form action="">
           <input type="text" placeholder="아이디" />
           <input type="password" placeholder="비밀번호" />
         </form>
       </section>
-      <section>
+      <section id="intro">
         <h2>안녕하세요!</h2>
         <p>HTML 실습 과제입니다.</p>
       </section>
-    </article>
-    <footer>
-      <p>이곳은 footer입니다.</p>
-    </footer>
+      <footer>
+        <p>이곳은 footer입니다.</p>
+      </footer>
+    </div>
   </body>
 </html>
