@@ -14,6 +14,9 @@
       .circle-container {
         background-color: beige;
         /* 코드 작성 */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
       }
       .circle {
         border-radius: 50%;
@@ -24,20 +27,51 @@
         font-weight: bold;
         font-size: 50px;
         /* 코드 작성 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #c1 {
+        background-color: rgb(255, 119, 119);
+      }
+      #c2 {
+        background-color: rgb(255, 171, 119);
+      }
+      #c3 {
+        background-color: rgb(255, 232, 119);
+      }
+      #c4 {
+        background-color: rgb(198, 255, 119);
+      }
+      #c5 {
+        background-color: rgb(119, 255, 169);
+      }
+      #c6 {
+        background-color: rgb(119, 255, 219);
+      }
+      #c7 {
+        background-color: rgb(126, 119, 255);
+      }
+      #c8 {
+        background-color: rgb(192, 119, 255);
+      }
+      #c9 {
+        background-color: rgb(255, 119, 235);
       }
     </style>
   </head>
   <body>
     <div class="circle-container">
-      <div class="circle">1</div>
-      <div class="circle">2</div>
-      <div class="circle">3</div>
-      <div class="circle">4</div>
-      <div class="circle">5</div>
-      <div class="circle">6</div>
-      <div class="circle">7</div>
-      <div class="circle">8</div>
-      <div class="circle">9</div>
+      <div class="circle" id="c1">1</div>
+      <div class="circle" id="c2">2</div>
+      <div class="circle" id="c3">3</div>
+      <div class="circle" id="c4">4</div>
+      <div class="circle" id="c5">5</div>
+      <div class="circle" id="c6">6</div>
+      <div class="circle" id="c7">7</div>
+      <div class="circle" id="c8">8</div>
+      <div class="circle" id="c9">9</div>
     </div>
   </body>
 </html>
